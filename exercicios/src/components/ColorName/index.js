@@ -26,7 +26,7 @@ let style = {
     }
 }
 
-export default class Teste extends Component {
+export default class ColorName extends Component {
     constructor(props) {
         super(props)
         this.state = {

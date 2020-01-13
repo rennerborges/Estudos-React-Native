@@ -10,16 +10,17 @@ import Plataformas from './components/Plataforma';
 import ValidarProps from './components/ValidarProps';
 import Evento from './components/Evento';
 import {Avo} from './components/ComunicacaoDireta';
-import Teste from './components/Teste';
+import ColorName from './components/ColorName';
 import ListaFlex from './components/ListaFlex'; 
 
 
 export default createDrawerNavigator({
     ListaFlex: {
-        screen: ()=> <ListaFlex/>
+        screen: ()=> <ListaFlex/>,
+        navigatorOptions: {title: 'Lista de alunos'} 
     },
-    Teste:{
-        screen: ()=> <Teste/>
+    ColorName:{
+        screen: ()=> <ColorName/>
     },
     "Comunicação Direta": {
         screen: ()=> <Avo nome="Jose" sobrenome="Borges"/>
