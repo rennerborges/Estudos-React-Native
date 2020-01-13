@@ -37,13 +37,15 @@ const itemEstilo = {
     borderWidth: 0.5,
     borderColor: '#222',
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
 }
 
 export const Aluno = props =>
     <View style={itemEstilo}>
         <Text>Nome: {props.nome}</Text>
-        <Text>Senha: {props.nota}</Text>
+        <Text>Nota: {props.nota}</Text>
     </View>
 
 export default props =>{
